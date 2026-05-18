@@ -10,13 +10,13 @@ This repository contains two main pipelines for property listing analysis:
 ### Meta-feature extraction
 
 ```bash
-python LLM_feature_generator.py --city gold_coast --model llama3.1
+python LLM_feature_generator.py --city hobart --model llama3.1
 ```
 
 ### Valuation pipeline
 
 ```bash
-python downstream_predictor_models.py --csv sample_data/gold_coast.csv --target LISTING_PRICE --test_size 0.3
+python downstream_predictor_models.py --csv sample_data/hobart.csv --target LISTING_PRICE --test_size 0.3
 ```
 
 ## Outputs

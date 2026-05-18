@@ -25,7 +25,7 @@ class MetaFeatureExtractorConfig:
     """Configuration values for the meta-feature extractor."""
 
     model_name: str = "llama3.1"
-    city: str = "gold_coast"
+    city: str = "hobart"
     save_every: int = 50
     max_desc_len: int = 1500
 
@@ -132,7 +132,7 @@ def main() -> None:
     setup_logging()
 
     parser = argparse.ArgumentParser(description="Meta-feature extraction for property descriptions")
-    parser.add_argument("--city", default="gold_coast", help="City name used to build the input file path")
+    parser.add_argument("--city", default="hobart", help="City name used to build the input file path")
     parser.add_argument("--model", default="llama3.1", help="Ollama model name")
     parser.add_argument("--save-every", type=int, default=50, help="Checkpoint frequency")
     parser.add_argument("--max-desc-len", type=int, default=1500, help="Maximum description length to feed the model")

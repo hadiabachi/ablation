@@ -389,7 +389,7 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="Train and evaluate AVM models for property price prediction.")
     parser.add_argument("--csv", required=False,
-                        default="sample_data/gold_coast.csv",
+                        default="sample_data/hobart.csv",
                         help="Path to the input CSV file.")
     parser.add_argument("--target", default="LISTING_PRICE", help="Target column name.")
     parser.add_argument("--test_size", type=float, default=0.3, help="Test split ratio.")

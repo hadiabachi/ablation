@@ -1,1 +1,5 @@
 config/hf_token.txt
+__pycache__/
+*.pyc
+sample_data/
+output_data/
